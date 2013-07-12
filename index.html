@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <title>Oak</title>
+    <script src="acorn.js"></script>
+    <script src="escodegen.browser.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+
+  <body oncontextmenu="return false;">
+    <div id="box">
+      <div class="container">
+        <p id="error" style="display:none;"></p>
+        <div id="output">Type some JavaScript code on the right, any variables
+          used but not declared with var will pop up here for you to
+          define.<br />
+          Information will appear on this side of the screen to help you better
+          understand your code.<br /><br />
+          <a href="#" id="example">Click here for an example</a><br /><br />
+          <div id="copyright">A simple JavaScript toy by
+            <a href="http://www.doc.ic.ac.uk/~ojj11">Oliver</a>. Uses
+            <a href="https://github.com/Constellation/escodegen">escodegen</a>,
+            <a href="http://marijnhaverbeke.nl/acorn/">acorn</a>,
+            and parts of
+            <a href="https://github.com/substack/node-burrito">node-burrito</a>.
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <textarea id="input" spellcheck="false"></textarea>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="script.js"></script>
+
+</body>
+</html>
